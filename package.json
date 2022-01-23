@@ -1,25 +1,38 @@
 {
-  "name": "delivery-app",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.0.8",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "@types/node": "17.0.10",
-    "@types/react": "17.0.38",
-    "autoprefixer": "^10.4.2",
-    "eslint": "8.7.0",
-    "eslint-config-next": "12.0.8",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.15",
-    "typescript": "4.5.5"
-  }
+	"name": "delivery-app",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"lintFix": "eslint ./ --fix",
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\""
+	},
+	"dependencies": {
+		"next": "12.0.8",
+		"react": "17.0.2",
+		"react-dom": "17.0.2"
+	},
+	"devDependencies": {
+		"@types/node": "17.0.10",
+		"@types/react": "17.0.38",
+		"@typescript-eslint/eslint-plugin": "^5.10.0",
+		"@typescript-eslint/parser": "^5.10.0",
+		"autoprefixer": "^10.4.2",
+		"eslint": "^8.7.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-next": "12.0.8",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-import-helpers": "^1.2.1",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-react": "^7.28.0",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"postcss": "^8.4.5",
+		"prettier": "^2.5.1",
+		"tailwindcss": "^3.0.15",
+		"typescript": "4.5.5"
+	}
 }
