@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Styles from './styles.module.css';
+
 type Props = {
 	children: React.ReactNode;
 	className: string;
@@ -7,7 +9,7 @@ type Props = {
 
 function Button({ ...props }: Props) {
 	return (
-		<button className={`${props.className} rounded-xl font-bold`}>
+		<button className={`${props.className} ${Styles.button}`}>
 			{props.children}
 		</button>
 	);
