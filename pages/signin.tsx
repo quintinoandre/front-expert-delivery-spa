@@ -28,7 +28,7 @@ const Signin: NextPage = () => {
 							type="password"
 							placeholder="Enter your password"
 						/>
-						<Button className="bg-indigo-200 w-full p-4 text-indigo-600 text-2xl">
+						<Button className="bg-indigo-200 text-xl text-indigo-600">
 							Sign in
 						</Button>
 						<div className="block text-center p-6">
