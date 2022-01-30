@@ -1,15 +1,15 @@
-.navbar{
-  display: flex;
-  margin-bottom: 3rem;
-  justify-content: space-between;
+.navbar {
+	display: flex;
+	margin-bottom: 3rem;
+	justify-content: space-between;
 }
 
-.inputSearch{
-  background-color: #F7F7F7;
-  outline: none;
-  line-height: 1.5rem;
-  height: 48px;
-  border-radius: 10px;
-  max-width: 385px;
-  width: 100%;
+.inputSearch {
+	background-color: #f7f7f7;
+	outline: none;
+	line-height: 1.5rem;
+	height: 48px;
+	border-radius: 10px;
+	max-width: 385px;
+	width: 100%;
 }

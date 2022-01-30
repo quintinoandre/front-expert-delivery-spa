@@ -34,11 +34,12 @@
 		"react/jsx-props-no-spreading": "off",
 		"react/jsx-filename-extension": "off",
 		"react/function-component-definition": "off",
-    "jsx-a11y/label-has-associated-control": "off",
-    "import/prefer-default-export": "off",
-    "import/extensions": "off",
-    "react/button-has-type": "off",
-    "jsx-a11y/anchor-is-valid": "off",
+		"jsx-a11y/label-has-associated-control": "off",
+		"import/prefer-default-export": "off",
+		"import/extensions": "off",
+		"react/button-has-type": "off",
+		"jsx-a11y/anchor-is-valid": "off",
+		"react/require-default-props": "off",
 		"import-helpers/order-imports": [
 			"warn",
 			{
