@@ -7,3 +7,4 @@ export * from './input-text';
 export * from './navbar';
 export * from './page-head';
 export * from './sidebar';
+export * from './user-profile';
