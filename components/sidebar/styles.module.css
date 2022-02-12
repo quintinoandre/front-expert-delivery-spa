@@ -13,11 +13,16 @@
 	padding-bottom: 48.02px;
 	padding-left: 32px;
 	padding-right: 32px;
+	display: flex;
+  align-items: center;
 }
 
-.header p {
+.header h3 {
+  padding-left: 8px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 700;
 	color: #000000;
-	@apply text-lg leading-6;
 }
 
 .menu {

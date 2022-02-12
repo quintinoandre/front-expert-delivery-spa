@@ -1,16 +1,19 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 import { IconBase } from '../icon';
+import { UserProfile } from '../user-profile';
 import Styles from './styles.module.css';
 
 function Sidebar() {
 	return (
 		<div className={Styles.sidebar}>
 			<div className={Styles.header}>
-				<p>
-					<span>icon</span>DeliveryAPP FX
-				</p>
+				<span>
+					<Image src="/logo.png" width={40} height={32} alt="DeliveryAPP FX" />
+				</span>
+				<h3>Nibble</h3>
 			</div>
 			<ul className={Styles.menu}>
 				<li>
@@ -74,7 +77,9 @@ function Sidebar() {
 					</Link>
 				</li>
 			</ul>
-			<div className={Styles.footer}>user component</div>
+			<div className={Styles.footer}>
+				<UserProfile />
+			</div>
 			<p className="text-gray-100">Sidebar</p>
 		</div>
 	);
