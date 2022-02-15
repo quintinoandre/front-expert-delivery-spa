@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 import { IconBase } from '../icon';
@@ -7,17 +8,23 @@ type Props = {
 	name: string;
 	legend: string;
 	iconName: string;
+	backgroundSection: string;
 };
 
 function Category({ ...props }: Props) {
 	return (
-		<div className={Styles.card}>
-			<div>
-				<IconBase iconName={props.iconName} />
-			</div>
-			<h3>{props.name}</h3>
-			<p>{props.legend}</p>
-		</div>
+		<Link href="/category">
+			<a className={Styles.card}>
+				<div
+					className={Styles.icon}
+					style={{ backgroundColor: props.backgroundSection }}
+				>
+					<IconBase iconName={props.iconName} color="white" />
+				</div>
+				<h3>{props.name}</h3>
+				<p>{props.legend}</p>
+			</a>
+		</Link>
 	);
 }
 

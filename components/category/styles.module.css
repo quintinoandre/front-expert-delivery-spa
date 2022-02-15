@@ -1,5 +1,6 @@
 .card {
-	width: 152px;
+	width: 100%;
+	min-width: 152px;
 	height: 158px;
 	padding: 1rem;
 	display: flex;
@@ -7,9 +8,35 @@
 	background-color: #f7f7f7;
 	border-radius: 12px;
 	text-align: center;
-	align-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .card:hover {
 	background-color: #e6e6e6;
+}
+
+.card h3 {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #182135;
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+
+.card p {
+	font-size: 0.75rem;
+	line-height: 1.125rem;
+	color: #626264;
+	font-weight: 400;
+}
+
+.icon {
+	width: 48px;
+	height: 48px;
+	border-radius: 9px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 16px;
 }
