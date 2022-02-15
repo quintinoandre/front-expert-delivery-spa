@@ -45,7 +45,7 @@ function Categories() {
 		},
 	];
 	return (
-		<div>
+		<div className="mb-12">
 			<div className={Styles.header}>
 				<h2>Explore categories</h2>
 				<Link href="/categories">
