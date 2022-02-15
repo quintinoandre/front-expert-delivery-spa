@@ -5,8 +5,8 @@ import { IconProps } from '../../types';
 function IconChevronRight({ ...props }: IconProps) {
 	return (
 		<svg
-			width={props.size || '24'}
-			height={props.size || '24'}
+			width={props.size || '12'}
+			height={props.size || '12'}
 			viewBox="0 0 12 12"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
