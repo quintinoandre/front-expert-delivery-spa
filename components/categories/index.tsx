@@ -2,7 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 
 import { Category } from '../category';
-// import Styles from './styles.module.css';
+import { IconChevronRight } from '../icon-family';
+import Styles from './styles.module.css';
 
 function Categories() {
 	const categories = [
@@ -45,10 +46,13 @@ function Categories() {
 	];
 	return (
 		<div>
-			<div className="flex">
-				<h2 className="grow">Explore categories</h2>
+			<div className={Styles.header}>
+				<h2>Explore categories</h2>
 				<Link href="/categories">
-					<a>See all</a>
+					<a>
+						See all
+						<IconChevronRight size={12} color="#5B4AA3" />
+					</a>
 				</Link>
 			</div>
 			<div className="flex gap-6 justify-between">
