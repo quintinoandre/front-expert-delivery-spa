@@ -1,4 +1,5 @@
 export * from './icon-bookmark';
+export * from './icon-chevron-right';
 export * from './icon-delivery';
 export * from './icon-document';
 export * from './icon-feed';
