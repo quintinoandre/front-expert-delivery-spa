@@ -70,7 +70,7 @@ function Highlights() {
 	];
 
 	return (
-		<div>
+		<div className="mb-12">
 			<div className={Styles.header}>
 				<h2>HighLights</h2>
 				<Link href="/highlights">
