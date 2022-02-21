@@ -1,0 +1,21 @@
+.information {
+	display: flex;
+	font-weight: 400;
+	font-size: 0.75rem;
+	color: #626264;
+	margin-left: 15px;
+}
+
+.information svg {
+	margin-right: 8px;
+}
+
+.information:first-child {
+	margin-left: 0px;
+}
+
+.information span {
+	font-weight: 600;
+	margin-right: 5px;
+	color: #182135;
+}
