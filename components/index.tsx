@@ -1,6 +1,7 @@
 export * from './button';
 export * from './categories';
 export * from './category';
+export * from './foods';
 export * from './highlights';
 export * from './icon';
 export * from './input-text';
