@@ -2,7 +2,13 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
 
-import { Categories, Highlights, Navbar, Sidebar } from '../components';
+import {
+	Categories,
+	Highlights,
+	Navbar,
+	Sidebar,
+	FoodsList,
+} from '../components';
 
 const Home: NextPage = () => {
 	return (
@@ -18,6 +24,7 @@ const Home: NextPage = () => {
 					<Navbar />
 					<Categories />
 					<Highlights />
+					<FoodsList />
 				</div>
 			</div>
 		</>

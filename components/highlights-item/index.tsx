@@ -9,7 +9,7 @@ import {
 } from '../icon-family';
 import Styles from './styles.module.css';
 
-type Props = {
+type HighlightsItemProps = {
 	name: string;
 	rate: number;
 	comments: number;
@@ -20,7 +20,7 @@ type Props = {
 	brandUrl: string;
 };
 
-function HighlightsItem({ ...props }: Props) {
+function HighlightsItem({ ...props }: HighlightsItemProps) {
 	return (
 		<div className={Styles.restaurant}>
 			<div className={Styles.brand}>

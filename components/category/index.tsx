@@ -4,14 +4,14 @@ import React from 'react';
 import { IconBase } from '../icon';
 import Styles from './styles.module.css';
 
-type Props = {
+type CategoryProps = {
 	name: string;
 	legend: string;
 	iconName: string;
 	backgroundSection: string;
 };
 
-function Category({ ...props }: Props) {
+function Category({ ...props }: CategoryProps) {
 	return (
 		<Link href="/category">
 			<a className={Styles.card}>
