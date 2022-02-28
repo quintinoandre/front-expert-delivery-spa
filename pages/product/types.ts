@@ -3,6 +3,7 @@ type TypeParams = { params: { id: string } };
 type TypeProps = {
 	id: string;
 	product: {
+		id: string;
 		name: string;
 		imageUrl: string;
 		deliveryFee: string;
