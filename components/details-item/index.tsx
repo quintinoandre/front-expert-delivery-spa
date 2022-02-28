@@ -13,7 +13,7 @@ type DetailsItemProps = {
 	rate?: number;
 	reviews?: number;
 	category?: string;
-	distance?: number;
+	distance?: string;
 	price?: number;
 	bonus?: string;
 	deliveryTime?: string;
@@ -50,7 +50,7 @@ function BonusComponent(bonus: string) {
 	return <div className={Styles.information}>{bonus}</div>;
 }
 
-function DistanceComponent(distance: number) {
+function DistanceComponent(distance: string) {
 	return (
 		<div className={Styles.information}>
 			<IconLocation size={16} color="#A3A3A4" />
