@@ -6,6 +6,7 @@ import Styles from './styles.module.css';
 function FoodsList() {
 	const data = [
 		{
+			id: '1',
 			name: 'Gigantic Rodeo Burger',
 			imageUrl: '/foods/burger.jpg',
 			deliveryFee: '2.99 Delivery',
@@ -15,6 +16,7 @@ function FoodsList() {
 			deliveryTime: '45 - 55 min',
 		},
 		{
+			id: '2',
 			name: 'Delicious Cheese Pie',
 			imageUrl: '/foods/pizza.jpg',
 			deliveryFee: 'Free delivery',
@@ -24,8 +26,9 @@ function FoodsList() {
 			deliveryTime: '15 - 25 min',
 		},
 		{
+			id: '3',
 			name: 'Chef’s Burger Deluxe',
-			imageUrl: '/foods/chef-burguer.jpg',
+			imageUrl: '/foods/chef-burger.jpg',
 			deliveryFee: 'Free delivery',
 			rate: 4.6,
 			reviews: 1.006,
@@ -33,6 +36,7 @@ function FoodsList() {
 			deliveryTime: '20 - 30 min',
 		},
 		{
+			id: '4',
 			name: 'Peperoni Pie',
 			imageUrl: '/foods/pizza-peperoni.jpg',
 			deliveryFee: 'Free delivery',
@@ -42,6 +46,7 @@ function FoodsList() {
 			deliveryTime: '30 - 45 min',
 		},
 		{
+			id: '5',
 			name: 'Natural Vegetable Rice',
 			imageUrl: '/foods/vegan.jpg',
 			deliveryFee: '3.45 Delivery',
@@ -51,6 +56,7 @@ function FoodsList() {
 			deliveryTime: '35 - 40 min',
 		},
 		{
+			id: '6',
 			name: 'Vegetable Skewers',
 			imageUrl: '/foods/vegetable.jpg',
 			deliveryFee: '4.99 Delivery',
