@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import {
@@ -8,26 +9,29 @@ import {
 	IconLocation,
 } from '../icon-family';
 import Styles from './styles.module.css';
+import { TypeProps } from './types';
 
-type HighlightsItemProps = {
-	name: string;
-	rate: number;
-	comments: number;
-	food: string;
-	distance: number;
-	price: number;
-	bonus: string;
-	brandUrl: string;
-};
-
-function HighlightsItem({ ...props }: HighlightsItemProps) {
+function HighlightsItem({ ...props }: TypeProps) {
 	return (
 		<div className={Styles.restaurant}>
-			<div className={Styles.brand}>
-				<Image src={props.brandUrl} alt={props.name} width={64} height={64} />
-			</div>
+			<Link href={`/restaurants/${props.id}`}>
+				<a>
+					<div className={Styles.brand}>
+						<Image
+							src={props.brandUrl}
+							alt={props.name}
+							width={64}
+							height={64}
+						/>
+					</div>
+				</a>
+			</Link>
 			<div className={Styles.information}>
-				<h3>{props.name}</h3>
+				<Link href={`/restaurants/${props.id}`}>
+					<a>
+						<h3>{props.name}</h3>
+					</a>
+				</Link>
 				<div className="my-3">
 					<div>
 						<IconStar size={16} color="#FACD5D" />
