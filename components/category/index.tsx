@@ -5,6 +5,7 @@ import { IconBase } from '../icon';
 import Styles from './styles.module.css';
 
 type CategoryProps = {
+	id: string;
 	name: string;
 	legend: string;
 	iconName: string;
@@ -13,7 +14,7 @@ type CategoryProps = {
 
 function Category({ ...props }: CategoryProps) {
 	return (
-		<Link href="/category">
+		<Link href={`/categories/${props.id}`}>
 			<a className={Styles.card}>
 				<div
 					className={Styles.icon}
