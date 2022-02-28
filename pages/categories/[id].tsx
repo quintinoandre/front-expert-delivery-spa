@@ -12,7 +12,7 @@ function Categories({ ...props }: TypeProps) {
 	return (
 		<>
 			<Head>
-				<title>Restaurant Category</title>
+				<title>{props.id} - Restaurant Category</title>
 				<meta name="description" content="List of category restaurants" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
@@ -20,7 +20,7 @@ function Categories({ ...props }: TypeProps) {
 				<Sidebar />
 				<div className="grow p-8">
 					<Navbar />
-					<Highlights />
+					<Highlights title={props.id} />
 				</div>
 			</div>
 		</>
