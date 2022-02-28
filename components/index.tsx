@@ -2,6 +2,7 @@ export * from './button';
 export * from './categories';
 export * from './category';
 export * from './details-item';
+export * from './food-item';
 export * from './foods';
 export * from './highlights';
 export * from './icon';
