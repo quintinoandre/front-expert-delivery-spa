@@ -1,20 +1,62 @@
+import Link from 'next/link';
 import React from 'react';
 
+import {
+	IconLocation,
+	IconShoppingBag,
+	IconShoppingCart,
+	IconFilter,
+	IconCoupon,
+	IconOptions,
+} from '../icon-family';
+import { SearchInput } from '../search-input';
 import Styles from './styles.module.css';
 
 function Navbar() {
 	return (
 		<div className={Styles.navbar}>
-			<div className="flex items-center">
-				<div>San Francisco, California</div>
-				<div>Pick up</div>
-				<div>Best deals</div>
-			</div>
-			<input className={Styles.inputSearch} placeholder="Search for anything" />
-			<div>
-				<button>FIL</button>
-				<button>CKT</button>
-			</div>
+			<ul className={Styles.nav}>
+				<li>
+					<Link href="/">
+						<a>
+							<IconLocation size={24} color="#503E9D" />
+							San Francisco, California
+							<IconOptions size={16} color="#000000" />
+						</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/">
+						<a>
+							<IconShoppingBag color="#FB6D3A" />
+							Pick up
+							<IconOptions size={16} color="#000000" />
+						</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/">
+						<a>
+							<IconCoupon color="#FACD5D" />
+							Best deals
+							<IconOptions size={16} color="#000000" />
+						</a>
+					</Link>
+				</li>
+			</ul>
+			<SearchInput />
+			<ul>
+				<li>
+					<button className={Styles.filterButton}>
+						<IconFilter color="#FFFFFF" />
+					</button>
+				</li>
+				<li>
+					<button className={Styles.shoppingCartButton}>
+						<IconShoppingCart color="#FFFFFF" />
+					</button>
+				</li>
+			</ul>
 		</div>
 	);
 }

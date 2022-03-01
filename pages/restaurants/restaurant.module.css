@@ -22,13 +22,13 @@
 }
 
 .tags span {
-  display: inline-flex;
-  line-height: 1.5rem;
-  margin-right: 1rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  color: #182135;
-  background-color: #F7F7F7;
-  font-weight: 600;
+	display: inline-flex;
+	line-height: 1.5rem;
+	margin-right: 1rem;
+	padding: 0.5rem 0.75rem;
+	border-radius: 8px;
+	font-size: 1rem;
+	color: #182135;
+	background-color: #f7f7f7;
+	font-weight: 600;
 }
