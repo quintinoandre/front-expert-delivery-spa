@@ -1,0 +1,26 @@
+.inputSearch {
+	background-color: #f7f7f7;
+	outline: none;
+	line-height: 1.5rem;
+	height: 48px;
+	border-radius: 10px;
+	max-width: 385px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.inputSearch svg {
+	margin-left: 1rem;
+}
+
+.inputSearch input {
+	width: 100%;
+	border: none;
+	padding: 0 0.75rem;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+	color: #626264;
+	background-color: transparent;
+}

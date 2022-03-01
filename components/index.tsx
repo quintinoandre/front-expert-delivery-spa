@@ -9,5 +9,6 @@ export * from './icon';
 export * from './input-text';
 export * from './navbar';
 export * from './page-head';
+export * from './search-input';
 export * from './sidebar';
 export * from './user-profile';
