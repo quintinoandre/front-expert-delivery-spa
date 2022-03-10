@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { InputIcon } from '../input-icon';
 import Styles from './styles.module.css';
 
 type Props = {
@@ -13,7 +12,7 @@ function InputText({ ...props }: Props) {
 	return (
 		<div className={Styles.container}>
 			<div className={Styles.icon}>
-				<InputIcon size={24} color="#503E9D" />
+				{/* <InputIcon size={24} color="#503E9D" /> */}
 			</div>
 			<div className="grow">
 				<label className={Styles.label}>{props.label}</label>

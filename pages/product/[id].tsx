@@ -1,7 +1,6 @@
-import Head from 'next/head';
 import React from 'react';
 
-import { FoodItem, Navbar, Sidebar } from '../../components';
+import { FoodItem, PageTemplate } from '../../components';
 import { TypeParams, TypeProps } from './types';
 
 async function getServerSideProps({ params: { id } }: TypeParams) {
@@ -24,23 +23,13 @@ async function getServerSideProps({ params: { id } }: TypeParams) {
 
 function Product({ ...props }: TypeProps) {
 	return (
-		<>
-			<Head>
-				<title>{props.product.name} - Restaurant XPTO</title>
-				<meta
-					name="description"
-					content={`Description of ${props.product.name} in Restaurant XPTO`}
-				/>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			<div className="container m-auto flex">
-				<Sidebar />
-				<div className="grow p-8">
-					<Navbar />
-					<FoodItem {...props.product} />
-				</div>
-			</div>
-		</>
+		<PageTemplate
+			title={`${props.product.name} - Restaurant XPTO`}
+			description={`Description of ${props.product.name} in Restaurant XPTO`}
+			keywords={`${props.product.name}, Restaurant XPTO, Restaurant, XPTO`}
+		>
+			<FoodItem {...props.product} />
+		</PageTemplate>
 	);
 }
 
