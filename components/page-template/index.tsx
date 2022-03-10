@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { FilterModal } from '../filter-modal';
 import { Navbar } from '../navbar';
 import { PageHead } from '../page-head';
 import { Sidebar } from '../sidebar';
@@ -13,6 +14,7 @@ function PageTemplate({ ...props }: TypeProps) {
 				description={props.description}
 				keywords={props.keywords}
 			/>
+			<FilterModal />
 			<div className="container m-auto flex">
 				<Sidebar />
 				<div className="grow p-8">

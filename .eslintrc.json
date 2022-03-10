@@ -40,6 +40,12 @@
 		"react/button-has-type": "off",
 		"jsx-a11y/anchor-is-valid": "off",
 		"react/require-default-props": "off",
+		"@typescript-eslint/no-unused-vars": [
+			"warn",
+			{
+				"argsIgnorePattern": "_"
+			}
+		],
 		"import-helpers/order-imports": [
 			"warn",
 			{
