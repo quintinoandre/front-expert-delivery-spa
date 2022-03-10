@@ -1,13 +1,9 @@
 import React from 'react';
 
 import Styles from './styles.module.css';
+import { TypeProps } from './types';
 
-type Props = {
-	children: React.ReactNode;
-	className: string;
-};
-
-function Button({ ...props }: Props) {
+function Button({ ...props }: TypeProps) {
 	return (
 		<button className={`${props.className} ${Styles.button}`}>
 			{props.children}
