@@ -3,16 +3,9 @@ import React from 'react';
 
 import { IconBase } from '../icon';
 import Styles from './styles.module.css';
+import { TypeProps } from './types';
 
-type CategoryProps = {
-	id: string;
-	name: string;
-	legend: string;
-	iconName: string;
-	backgroundSection: string;
-};
-
-function Category({ ...props }: CategoryProps) {
+function Category({ ...props }: TypeProps) {
 	return (
 		<Link href={`/categories/${props.id}`}>
 			<a className={Styles.card}>

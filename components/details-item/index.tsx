@@ -8,16 +8,7 @@ import {
 	IconDelivery,
 } from '../icon-family';
 import Styles from './styles.module.css';
-
-type DetailsItemProps = {
-	rate?: number;
-	reviews?: number;
-	category?: string;
-	distance?: string;
-	price?: number;
-	bonus?: string;
-	deliveryTime?: string;
-};
+import { TypeProps } from './types';
 
 function RateComponent(rate: number, reviews: number) {
 	return (
@@ -68,7 +59,7 @@ function DeliveryTime(deliveryTime: string) {
 	);
 }
 
-function DetailsItem({ ...props }: DetailsItemProps) {
+function DetailsItem({ ...props }: TypeProps) {
 	return (
 		<div className="mt-3 flex">
 			{props.rate && props.reviews && RateComponent(props.rate, props.reviews)}

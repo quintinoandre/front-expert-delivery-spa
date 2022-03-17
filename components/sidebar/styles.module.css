@@ -1,11 +1,14 @@
 .sidebar {
-	width: 100%;
-	max-width: 304px;
-	min-height: 1024px;
+	max-height: 1024px;
 	background-color: #f7f7f7;
-	border-radius: 0 24px 24px 0;
-	display: flex;
-	flex-direction: column;
+	@apply w-full flex flex-col rounded-3xl;
+}
+
+@media screen(md) {
+	.sidebar {
+		width: 100%;
+		max-width: 304px;
+	}
 }
 
 .header {
@@ -23,6 +26,7 @@
 	line-height: 1.5rem;
 	font-weight: 700;
 	color: #000000;
+	@apply hidden md:block;
 }
 
 .menu {
@@ -41,8 +45,12 @@
 	@apply font-bold text-base;
 }
 
+.menu svg {
+	@apply md:mr-6;
+}
+
 .menu span {
-	margin-right: 24px;
+	@apply hidden md:block;
 }
 
 .menu li:hover {

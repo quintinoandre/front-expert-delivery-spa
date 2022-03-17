@@ -1,13 +1,9 @@
 import Head from 'next/head';
 import React from 'react';
 
-type PageHeadProps = {
-	title: string;
-	description?: string;
-	keywords?: string;
-};
+import { TypeProps } from './types';
 
-function PageHead({ ...props }: PageHeadProps) {
+function PageHead({ ...props }: TypeProps) {
 	return (
 		<Head>
 			<title>{props.title} - DeliveryApp FrontExpert</title>

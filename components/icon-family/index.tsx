@@ -6,6 +6,7 @@ export * from './icon-document';
 export * from './icon-feed';
 export * from './icon-filter';
 export * from './icon-fire';
+export * from './icon-heart';
 export * from './icon-home';
 export * from './icon-location';
 export * from './icon-mail';

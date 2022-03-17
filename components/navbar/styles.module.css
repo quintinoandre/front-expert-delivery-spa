@@ -4,13 +4,21 @@
 	justify-content: space-between;
 }
 
-.navbar ul {
-	display: flex;
+.navbar .nav,
+.navbar .navButtons {
 	gap: 1.75rem;
 }
 
 .navbar ul:last-child {
 	gap: 1rem;
+}
+
+.navbar .nav {
+	@apply hidden lg:flex;
+}
+
+.navbar .navButtons {
+	@apply flex;
 }
 
 .navbar li {

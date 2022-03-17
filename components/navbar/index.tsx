@@ -48,7 +48,7 @@ function Navbar() {
 				</li>
 			</ul>
 			<SearchInput />
-			<ul>
+			<ul className={Styles.navButtons}>
 				<li>
 					<button
 						className={Styles.filterButton}

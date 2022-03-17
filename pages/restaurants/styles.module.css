@@ -1,0 +1,66 @@
+.header {
+	@apply flex flex-col mb-6 justify-between;
+}
+
+.header h1 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+}
+
+.header p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #626264;
+}
+
+.details {
+	@apply w-full;
+}
+
+.details h1 {
+	@apply flex md:flex-1 mb-4 md:mb-0;
+}
+
+.details p {
+	max-width: 577px;
+}
+
+.tags {
+	@apply flex gap-4 flex-wrap;
+}
+
+.tags span {
+	display: inline-block;
+	line-height: 1.5rem;
+	padding: 0.5rem 0.75rem;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.cover {
+	@apply relative;
+	margin-bottom: 104px;
+}
+
+.image {
+	@apply relative overflow-hidden h-24 lg:h-72 w-full;
+}
+
+.brand {
+	@apply absolute rounded-2xl shadow border-4 border-white;
+	background-color: #f7f7f7;
+	padding: 1.5rem;
+	left: 50%;
+	margin-left: -72px;
+	margin-top: -72px;
+	width: 144px;
+	height: 144px;
+}
+
+.favoriteButton {
+	@apply absolute top-8 right-8;
+	@apply bg-white h-12 w-12 rounded-2xl flex items-center justify-center;
+	@apply transition-all hover:shadow-lg hover:bg-gray-300;
+}

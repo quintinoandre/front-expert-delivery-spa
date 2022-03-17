@@ -16,63 +16,51 @@ function Sidebar() {
 				<h3>Nibble</h3>
 			</div>
 			<ul className={Styles.menu}>
-				<li>
+				<li className={Styles.active}>
 					<Link href="/">
 						<a>
-							<span>
-								<IconBase iconName="home" color="#A3A3A4" />
-							</span>
-							Home
+							<IconBase iconName="home" color="#A3A3A4" />
+							<span>Home</span>
 						</a>
 					</Link>
 				</li>
-				<li className={Styles.active}>
+				<li>
 					<Link href="/explore">
 						<a>
-							<span>
-								<IconBase iconName="feed" color="#A3A3A4" />
-							</span>
-							Explore
+							<IconBase iconName="feed" color="#A3A3A4" />
+							<span>Explore</span>
 						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/favorites">
 						<a>
-							<span>
-								<IconBase iconName="bookmark" color="#A3A3A4" />
-							</span>
-							Favorites
+							<IconBase iconName="bookmark" color="#A3A3A4" />
+							<span>Favorites</span>
 						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/orders">
 						<a>
-							<span>
-								<IconBase iconName="document" color="#A3A3A4" />
-							</span>
-							Orders
+							<IconBase iconName="document" color="#A3A3A4" />
+							<span>Orders</span>
 						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/messages">
 						<a>
-							<span>
-								<IconBase iconName="mail" color="#A3A3A4" />
-							</span>
-							Messages
+							<IconBase iconName="mail" color="#A3A3A4" />
+							<span>Messages</span>
 						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/settings">
 						<a>
-							<span>
-								<IconBase iconName="settings" color="#A3A3A4" />
-							</span>
-							Settings
+							<IconBase iconName="settings" color="#A3A3A4" />
+							<span>Settings</span>
 						</a>
 					</Link>
 				</li>

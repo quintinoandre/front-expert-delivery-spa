@@ -1,7 +1,13 @@
+import Image from 'next/image';
 import React from 'react';
 
-import { FoodsList, PageTemplate, DetailsItem } from '../../components';
-import Styles from './restaurant.module.css';
+import {
+	FoodsList,
+	PageTemplate,
+	DetailsItem,
+	IconBase,
+} from '../../components';
+import Styles from './styles.module.css';
 import { TypeParams, TypeProps } from './types';
 
 async function getServerSideProps({ params: { id } }: TypeParams) {
@@ -15,20 +21,36 @@ function Restaurant({ ...props }: TypeProps) {
 			description="Restaurant Burger King"
 			keywords="Restaurant, Burger, King"
 		>
-			<div>{props.id}</div>
-			<div>[header]</div>
 			<div className={Styles.header}>
+				<div className={Styles.cover}>
+					<div className={Styles.image}>
+						<Image src="/cover.jpg" layout="fill" alt="cover" />
+					</div>
+					<div className={Styles.brand}>
+						<Image
+							src="/brands/burger-king.svg"
+							width={96}
+							height={96}
+							alt="cover"
+						/>
+					</div>
+					<button className={Styles.favoriteButton}>
+						<IconBase iconName="heart" size={20} color="#000000" />
+					</button>
+				</div>
 				<div className={Styles.details}>
-					<h1>Burger King</h1>
+					<div className="flex flex-col md:flex-row mb-3">
+						<h1>Burger King</h1>
+						<div className={Styles.tags}>
+							<span className="tag-purple">Free delivery</span>
+							<span className="tag-orange">Buy 2 get 1 free</span>
+							<span className="tag-gray">Opens at 12 PM</span>
+						</div>
+					</div>
 					<p>
 						It is one of the most iconic and well-recognizable fast food
 						restaurants out there which offers really amazing food and drinks.
 					</p>
-				</div>
-				<div className={Styles.tags}>
-					<span>Free delivery</span>
-					<span>Buy 2 get 1 free</span>
-					<span>Opens at 12 PM</span>
 				</div>
 			</div>
 			<div className="mb-12">

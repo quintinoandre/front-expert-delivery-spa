@@ -6,6 +6,7 @@ import {
 	IconDocument,
 	IconFeed,
 	IconFire,
+	IconHeart,
 	IconHome,
 	IconMail,
 	IconMap,
@@ -15,14 +16,9 @@ import {
 	IconSilverware,
 	IconWallet,
 } from '../icon-family';
+import { TypeProps } from './types';
 
-type IconBaseProps = {
-	size?: string | number;
-	color?: string;
-	iconName: string;
-};
-
-function IconBase({ ...props }: IconBaseProps): JSX.Element {
+function IconBase({ ...props }: TypeProps): JSX.Element {
 	switch (props.iconName) {
 		case 'bookmark':
 			return <IconBookmark size={props.size} color={props.color} />;
@@ -34,6 +30,8 @@ function IconBase({ ...props }: IconBaseProps): JSX.Element {
 			return <IconFeed size={props.size} color={props.color} />;
 		case 'fire':
 			return <IconFire size={props.size} color={props.color} />;
+		case 'heart':
+			return <IconHeart size={props.size} color={props.color} />;
 		case 'home':
 			return <IconHome size={props.size} color={props.color} />;
 		case 'mail':

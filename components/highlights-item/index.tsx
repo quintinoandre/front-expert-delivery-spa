@@ -27,11 +27,11 @@ function HighlightsItem({ ...props }: TypeProps) {
 				</a>
 			</Link>
 			<div className={Styles.information}>
-				<Link href={`/restaurants/${props.id}`}>
-					<a>
-						<h3>{props.name}</h3>
-					</a>
-				</Link>
+				<h3>
+					<Link href={`/restaurants/${props.id}`}>
+						<a>{props.name}</a>
+					</Link>
+				</h3>
 				<div className="my-3">
 					<div>
 						<IconStar size={16} color="#FACD5D" />

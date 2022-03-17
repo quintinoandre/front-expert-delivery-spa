@@ -8,26 +8,25 @@ import { TypeProps } from './types';
 
 function FoodItem({ ...props }: TypeProps) {
 	return (
-		<div>
+		<div className={Styles.item}>
 			<Link href={`/product/${props.id}`}>
 				<a>
 					<div className={Styles.thumb}>
 						<Image
 							src={props.imageUrl}
 							alt={props.name}
-							width={336}
-							height={176}
+							layout="fill"
 							loading="lazy"
 						/>
 					</div>
 				</a>
 			</Link>
 			<div className={Styles.header}>
-				<Link href={`/product/${props.id}`}>
-					<a>
-						<h3>{props.name}</h3>
-					</a>
-				</Link>
+				<h3>
+					<Link href={`/product/${props.id}`}>
+						<a>{props.name}</a>
+					</Link>
+				</h3>
 				<span>{props.deliveryFee}</span>
 			</div>
 			<DetailsItem

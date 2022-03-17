@@ -4,7 +4,7 @@
 }
 
 .userData {
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: left;
 	flex-direction: column;
@@ -27,7 +27,14 @@
 }
 
 .button {
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
+}
+
+@media screen(md) {
+	.userData,
+	.button {
+		@apply flex;
+	}
 }

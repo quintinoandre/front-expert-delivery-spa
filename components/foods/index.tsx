@@ -73,7 +73,7 @@ function FoodsList() {
 				<h2>Popular orders</h2>
 				<div>Today</div>
 			</div>
-			<div className="flex gap-6 justify-between flex-wrap">
+			<div className={Styles.container}>
 				{data.map((item) => (
 					<FoodItem key={item.name} {...item} />
 				))}

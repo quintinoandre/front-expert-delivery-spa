@@ -1,7 +1,11 @@
 .restaurant {
-	display: flex;
-	width: 100%;
-	max-width: 340px;
+	@apply flex w-full;
+}
+
+@media screen(md) {
+	.restaurant {
+		max-width: 340px;
+	}
 }
 
 .brand {

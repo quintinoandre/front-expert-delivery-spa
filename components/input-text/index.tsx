@@ -1,14 +1,9 @@
 import React from 'react';
 
 import Styles from './styles.module.css';
+import { TypeProps } from './types';
 
-type Props = {
-	label: string;
-	type: string;
-	placeholder: string;
-};
-
-function InputText({ ...props }: Props) {
+function InputText({ ...props }: TypeProps) {
 	return (
 		<div className={Styles.container}>
 			<div className={Styles.icon}>

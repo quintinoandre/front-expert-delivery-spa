@@ -22,3 +22,7 @@
 .header svg {
 	margin-left: 10px;
 }
+
+.container {
+	@apply flex gap-6 justify-between flex-col md:flex-row;
+}
