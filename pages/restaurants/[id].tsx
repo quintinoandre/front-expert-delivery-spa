@@ -8,7 +8,10 @@ import {
 	IconBase,
 } from '../../components';
 import Styles from './styles.module.css';
-import { TypeParams, TypeProps } from './types';
+
+type TypeParams = { params: { id: string } };
+
+type TypeProps = { id: string };
 
 async function getServerSideProps({ params: { id } }: TypeParams) {
 	return { props: { id } };

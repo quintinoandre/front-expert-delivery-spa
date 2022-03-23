@@ -1,7 +1,22 @@
 import React from 'react';
 
 import { FoodItem, PageTemplate } from '../../components';
-import { TypeParams, TypeProps } from './types';
+
+type TypeParams = { params: { id: string } };
+
+type TypeProps = {
+	id: string;
+	product: {
+		id: string;
+		name: string;
+		imageUrl: string;
+		deliveryFee: string;
+		rate: number;
+		reviews: number;
+		category: string;
+		deliveryTime: string;
+	};
+};
 
 async function getServerSideProps({ params: { id } }: TypeParams) {
 	return {

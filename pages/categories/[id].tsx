@@ -1,7 +1,10 @@
 import React from 'react';
 
 import { Highlights, PageTemplate } from '../../components';
-import { TypeParams, TypeProps } from './types';
+
+type TypeParams = { params: { id: string } };
+
+type TypeProps = { id: string };
 
 async function getServerSideProps({ params: { id } }: TypeParams) {
 	return { props: { id } };
