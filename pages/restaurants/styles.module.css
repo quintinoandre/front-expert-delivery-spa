@@ -23,7 +23,7 @@
 }
 
 .details p {
-	max-width: 577px;
+	max-width: 36.0625rem;
 }
 
 .tags {
@@ -34,14 +34,14 @@
 	display: inline-block;
 	line-height: 1.5rem;
 	padding: 0.5rem 0.75rem;
-	border-radius: 8px;
+	border-radius: 0.5rem;
 	font-size: 1rem;
 	font-weight: 600;
 }
 
 .cover {
 	@apply relative;
-	margin-bottom: 104px;
+	margin-bottom: 6.5rem;
 }
 
 .image {
@@ -53,10 +53,10 @@
 	background-color: #f7f7f7;
 	padding: 1.5rem;
 	left: 50%;
-	margin-left: -72px;
-	margin-top: -72px;
-	width: 144px;
-	height: 144px;
+	margin-left: -4.5rem;
+	margin-top: -4.5rem;
+	width: 9rem;
+	height: 9rem;
 }
 
 .favoriteButton {

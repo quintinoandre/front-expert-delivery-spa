@@ -1,6 +1,6 @@
 .header {
 	display: flex;
-	margin-bottom: 32px;
+	margin-bottom: 2rem;
 }
 
 .header h2 {
@@ -20,7 +20,7 @@
 }
 
 .header svg {
-	margin-left: 10px;
+	margin-left: 0.625rem;
 }
 
 .container {

@@ -7,7 +7,7 @@
 		"start": "next start",
 		"lint": "next lint",
 		"lintFix": "eslint ./ --fix",
-		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\""
+		"format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx,html,css,scss}\""
 	},
 	"dependencies": {
 		"@headlessui/react": "^1.5.0",

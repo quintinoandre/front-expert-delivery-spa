@@ -4,16 +4,16 @@
 
 @media screen(md) {
 	.restaurant {
-		max-width: 340px;
+		max-width: 21.25rem;
 	}
 }
 
 .brand {
 	background-color: #f7f7f7;
-	border-radius: 12px;
-	height: 96px;
-	width: 96px;
-	margin-right: 24px;
+	border-radius: 0.75rem;
+	height: 6rem;
+	width: 6rem;
+	margin-right: 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -30,24 +30,24 @@
 }
 
 .information div svg {
-	margin-right: 8px;
+	margin-right: 0.5rem;
 }
 
 .information div div {
 	text-align: left;
-	margin-left: 16px;
+	margin-left: 1rem;
 	font-size: 0.75rem;
 	line-height: 1rem;
 	color: #626264;
 }
 
 .information div div:first-child {
-	margin-left: 0px;
+	margin-left: 0rem;
 }
 
 .information span {
 	font-weight: 700;
-	margin-right: 5px;
+	margin-right: 0.3125rem;
 	color: #182135;
 }
 

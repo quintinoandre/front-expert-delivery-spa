@@ -8,8 +8,8 @@
 	justify-content: center;
 	align-items: left;
 	flex-direction: column;
-	padding-left: 20px;
-	padding-right: 21px;
+	padding-left: 1.25rem;
+	padding-right: 1.3125rem;
 }
 
 .userData h3 {
@@ -32,7 +32,7 @@
 	align-items: center;
 }
 
-@media screen(md) {
+@media screen(lg) {
 	.userData,
 	.button {
 		@apply flex;

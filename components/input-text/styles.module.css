@@ -3,10 +3,10 @@
 }
 
 .icon {
-	width: 64px;
-	height: 64px;
-	margin-right: 24px;
-	border-radius: 16px;
+	width: 4rem;
+	height: 4rem;
+	margin-right: 1.5rem;
+	border-radius: 1rem;
 	background-color: #edecf5;
 	@apply flex justify-center items-center;
 }

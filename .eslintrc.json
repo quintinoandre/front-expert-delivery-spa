@@ -22,13 +22,15 @@
 		"sourceType": "module"
 	},
 	"plugins": [
+		"eslint-plugin-import-helpers",
 		"react",
 		"@typescript-eslint",
-		"prettier",
-		"eslint-plugin-import-helpers"
+		"prettier"
 	],
 	"rules": {
 		"prettier/prettier": "error",
+		"arrow-body-style": "off",
+		"prefer-arrow-callback": "off",
 		"space-before-function-paren": "off",
 		"react/prop-types": "off",
 		"react/jsx-props-no-spreading": "off",

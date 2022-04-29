@@ -1,10 +1,11 @@
 .sidebar {
 	max-height: 1024px;
 	background-color: #f7f7f7;
+	max-width: 112px;
 	@apply w-full flex flex-col rounded-3xl;
 }
 
-@media screen(md) {
+@media screen(lg) {
 	.sidebar {
 		width: 100%;
 		max-width: 304px;
@@ -26,31 +27,31 @@
 	line-height: 1.5rem;
 	font-weight: 700;
 	color: #000000;
-	@apply hidden md:block;
+	@apply hidden lg:block;
 }
 
 .menu {
 	flex-grow: 1;
-	padding: 0 16px;
+	padding: 0 28px;
 }
 
 .menu li {
-	height: 56px;
-	border-radius: 12px;
+	height: 3.5rem;
+	border-radius: 0.75rem;
 }
 
 .menu a {
 	display: flex;
-	padding: 16px;
+	padding: 1rem;
 	@apply font-bold text-base;
 }
 
 .menu svg {
-	@apply md:mr-6;
+	@apply lg:mr-6;
 }
 
 .menu span {
-	@apply hidden md:block;
+	@apply hidden lg:block;
 }
 
 .menu li:hover {
@@ -67,5 +68,5 @@
 }
 
 .footer {
-	padding: 32px;
+	padding: 2rem;
 }

@@ -1,5 +1,5 @@
 .button {
-	border-radius: 12px;
+	border-radius: 0.75rem;
 	@apply text-xl leading-8 h-16 w-full;
 	@apply hover:opacity-80;
 }

@@ -19,8 +19,8 @@
 	font-weight: 600;
 	color: #503e9d;
 	background-color: #edecf5;
-	padding: 4px 8px;
-	border-radius: 4px;
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.25rem;
 }
 
 .item {
