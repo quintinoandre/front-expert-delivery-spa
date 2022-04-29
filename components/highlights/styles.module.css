@@ -24,5 +24,5 @@
 }
 
 .container {
-	@apply flex gap-6 justify-between flex-wrap;
+	@apply flex gap-y-6 lg:gap-y-6 justify-between flex-wrap;
 }
