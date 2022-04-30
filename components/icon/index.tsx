@@ -1,7 +1,6 @@
-import React from 'react';
-
 import {
 	IconBookmark,
+	IconCard,
 	IconDelivery,
 	IconDocument,
 	IconFeed,
@@ -11,9 +10,12 @@ import {
 	IconMail,
 	IconMap,
 	IconOptions,
+	IconProfile,
 	IconRestaurant,
 	IconSettings,
 	IconSilverware,
+	IconSplitOrder,
+	IconSupport,
 	IconWallet,
 } from '../icon-family';
 import { TypeProps } from './types';
@@ -22,6 +24,8 @@ function IconBase({ ...props }: TypeProps): JSX.Element {
 	switch (props.iconName) {
 		case 'bookmark':
 			return <IconBookmark size={props.size} color={props.color} />;
+		case 'card':
+			return <IconCard size={props.size} color={props.color} />;
 		case 'delivery':
 			return <IconDelivery size={props.size} color={props.color} />;
 		case 'document':
@@ -40,12 +44,18 @@ function IconBase({ ...props }: TypeProps): JSX.Element {
 			return <IconMap size={props.size} color={props.color} />;
 		case 'options':
 			return <IconOptions size={props.size} color={props.color} />;
+		case 'profile':
+			return <IconProfile size={props.size} color={props.color} />;
 		case 'restaurant':
 			return <IconRestaurant size={props.size} color={props.color} />;
 		case 'settings':
 			return <IconSettings size={props.size} color={props.color} />;
 		case 'silverware':
 			return <IconSilverware size={props.size} color={props.color} />;
+		case 'split-order':
+			return <IconSplitOrder size={props.size} color={props.color} />;
+		case 'support':
+			return <IconSupport size={props.size} color={props.color} />;
 		case 'wallet':
 			return <IconWallet size={props.size} color={props.color} />;
 		default:
