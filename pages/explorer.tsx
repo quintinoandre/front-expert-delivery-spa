@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import React from 'react';
 
 import { Highlights, PageTemplate, FoodsList } from '../components';
 

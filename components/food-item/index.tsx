@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
 import { DetailsItem } from '../details-item';
 import Styles from './styles.module.css';

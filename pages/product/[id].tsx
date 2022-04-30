@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { FoodItem, PageTemplate } from '../../components';
 
 type TypeParams = { params: { id: string } };

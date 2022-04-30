@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Styles from './styles.module.css';
 import { TypeProps } from './types';
 

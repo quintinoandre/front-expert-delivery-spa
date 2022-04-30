@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { IconProps } from '../../types';
 
 function IconSilverware({ ...props }: IconProps) {

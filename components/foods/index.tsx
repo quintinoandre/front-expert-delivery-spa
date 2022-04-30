@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { FoodItem } from '../food-item';
 import Styles from './styles.module.css';
 

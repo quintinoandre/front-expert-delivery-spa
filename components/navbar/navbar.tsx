@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useFilter } from '../../stores';
 import { IconShoppingCart, IconFilter } from '../icon-family';
 import { SearchInput } from '../search-input';

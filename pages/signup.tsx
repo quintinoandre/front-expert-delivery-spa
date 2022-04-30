@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import React from 'react';
 
 import { Button, InputText, PageHead } from '../components';
 

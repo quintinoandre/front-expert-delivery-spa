@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 
 import { IconBase } from '../icon';
 import Styles from './styles.module.css';

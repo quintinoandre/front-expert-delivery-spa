@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 
 import { IconOptions } from '../icon-family';
 import Styles from './styles.module.css';

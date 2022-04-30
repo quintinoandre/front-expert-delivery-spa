@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { IconSearch } from '../icon-family';
 import Styles from './styles.module.css';
 

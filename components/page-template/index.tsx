@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { FilterModal } from '../filter-modal';
 import { Navbar } from '../navbar';
 import { PageHead } from '../page-head';

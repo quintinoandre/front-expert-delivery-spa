@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useFilter } from '../../stores';
 import Styles from './styles.module.css';
 
@@ -8,7 +6,6 @@ function FilterModal() {
 	const { toggleModal } = useFilter((store) => store);
 
 	return (
-		// eslint-disable-next-line react/jsx-no-useless-fragment
 		<>
 			{isOpen && (
 				<div className={Styles.modal}>
