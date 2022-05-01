@@ -4,55 +4,40 @@
 
 @media screen(md) {
 	.restaurant {
-		max-width: 21.25rem;
+		@apply max-w-[21.25rem];
 	}
 }
 
 .brand {
-	background-color: #f7f7f7;
-	border-radius: 0.75rem;
-	height: 6rem;
-	width: 6rem;
-	margin-right: 1.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@apply flex items-center justify-center bg-[#f7f7f7] rounded-xl h-24 w-24 mr-6;
 }
 
 .information {
-	display: flex;
-	flex-direction: column;
+	@apply flex flex-col;
 }
 
 .information div {
-	display: flex;
-	align-items: center;
+	@apply flex items-center;
 }
 
 .information div svg {
-	margin-right: 0.5rem;
+	@apply mr-2;
 }
 
 .information div div {
-	text-align: left;
-	margin-left: 1rem;
-	font-size: 0.75rem;
-	line-height: 1rem;
-	color: #626264;
+	@apply ml-4;
+	@apply text-left text-xs text-[#626264];
 }
 
 .information div div:first-child {
-	margin-left: 0rem;
+	@apply ml-0;
 }
 
 .information span {
-	font-weight: 700;
-	margin-right: 0.3125rem;
-	color: #182135;
+	@apply mr-[0.3125rem];
+	@apply font-bold text-[#182135];
 }
 
 .information h3 {
-	font-size: 1rem;
-	line-height: 1.5rem;
-	font-weight: 700;
+	@apply text-base font-bold;
 }

@@ -3,22 +3,14 @@
 }
 
 .icon {
-	width: 4rem;
-	height: 4rem;
-	margin-right: 1.5rem;
-	border-radius: 1rem;
-	background-color: #edecf5;
-	@apply flex justify-center items-center;
+	@apply flex justify-center items-center w-16 h-16 mr-6 rounded-2xl bg-[#edecf5];
 }
 
 .label {
-	color: #182135;
-	@apply uppercase tracking-wider;
-	@apply text-xs font-bold text-gray-800;
+	@apply text-xs font-bold text-[#182135] uppercase tracking-wider;
 }
 
 .input {
-	color: #626264;
-	@apply w-full py-3 border-b text-xl;
+	@apply w-full py-3 border-b text-xl text-[#626264];
 	@apply focus:border-indigo-500 focus:outline-none;
 }

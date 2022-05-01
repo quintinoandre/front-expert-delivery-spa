@@ -8,30 +8,30 @@
 	h1,
 	h2,
 	h3 {
-		color: #182135;
+		@apply text-[#182135];
 	}
 
 	h3 a {
-		color: #182135;
+		@apply text-[#182135];
 	}
 
 	p,
 	a {
-		color: #626264;
+		@apply text-[#626264];
 	}
 
 	.tag-purple {
-		background-color: rgb(80, 62, 157, 0.1);
-		color: #503e9d;
+		@apply bg-[#503e9d1a];
+		@apply text-[#503e9d];
 	}
 
 	.tag-orange {
-		background-color: rgb(251, 109, 58, 0.1);
-		color: #fb6d3a;
+		@apply bg-[#fb6d3a1a];
+		@apply text-[#fb6d3a];
 	}
 
 	.tag-gray {
-		background-color: #f7f7f7;
-		color: #182135;
+		@applt bg-[#f7f7f7];
+		@apply text-[#182135];
 	}
 }

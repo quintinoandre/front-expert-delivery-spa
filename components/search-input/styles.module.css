@@ -1,26 +1,13 @@
 .inputSearch {
-	background-color: #f7f7f7;
-	outline: none;
-	line-height: 1.5rem;
-	height: 3rem;
-	border-radius: 0.625rem;
-	max-width: 24.0625rem;
-	width: 100%;
-	display: flex;
-	align-items: center;
+	@apply flex items-center bg-[#f7f7f7] outline-0 h-12 rounded-[0.625rem] w-full max-w-[24.0625rem];
+	@apply leading-6;
 }
 
 .inputSearch svg {
-	margin-left: 1rem;
+	@apply ml-4;
 }
 
 .inputSearch input {
-	width: 100%;
-	border: none;
-	padding: 0 0.75rem;
-	font-size: 0.875rem;
-	line-height: 1.5rem;
-	font-weight: 400;
-	color: #626264;
-	background-color: transparent;
+	@apply w-full border-none py-0 px-3 bg-transparent;
+	@apply text-sm leading-6 font-normal text-[#626264];
 }

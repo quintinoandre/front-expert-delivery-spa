@@ -1,26 +1,19 @@
 .header {
-	display: flex;
-	margin-bottom: 2rem;
+	@apply flex mb-8;
 }
 
 .header h2 {
-	flex-grow: 1;
-	font-size: 1.5rem;
-	line-height: 2rem;
-	font-weight: 700;
+	@apply grow;
+	@apply text-2xl font-bold;
 }
 
 .header a {
-	color: #5b4aa3;
-	font-size: 1rem;
-	line-height: 1.5rem;
-	font-weight: 600;
-	display: flex;
-	align-items: center;
+	@apply flex items-center;
+	@apply text-[#5b4aa3] text-base font-semibold;
 }
 
 .header svg {
-	margin-left: 0.625rem;
+	@apply ml-[0.625rem];
 }
 
 .container {

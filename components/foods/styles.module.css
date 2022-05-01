@@ -1,27 +1,17 @@
 .header {
-	display: flex;
-	margin-bottom: 2rem;
+	@apply flex mb-8;
 }
 
 .header h2 {
-	flex-grow: 1;
-	font-size: 1.5rem;
-	line-height: 2rem;
-	font-weight: 700;
+	@apply grow;
+	@apply text-2xl font-bold;
 }
 
 .header div {
-	display: flex;
-	align-items: center;
-	background-color: #f7f7f7;
-	color: #182135;
-	font-size: 0.75rem;
-	line-height: 1rem;
-	padding: 0.25rem 0.5rem;
-	font-weight: 600;
+	@apply flex items-center bg-[#f7f7f7] py-1 px-2;
+	@apply text-[#182135] text-xs font-semibold;
 }
 
 .container {
-	@apply justify-between grid grid-cols-1 md:grid-cols-3;
-	@apply w-full gap-y-8 gap-8;
+	@apply w-full gap-y-8 gap-8 justify-between grid grid-cols-1 md:grid-cols-3;
 }

@@ -3,15 +3,11 @@
 }
 
 .header h1 {
-	font-size: 2rem;
-	line-height: 2.5rem;
-	font-weight: 700;
+	@apply text-[2rem] leading-10 font-bold;
 }
 
 .header p {
-	font-size: 1rem;
-	line-height: 1.5rem;
-	color: #626264;
+	@apply text-base text-[#626264];
 }
 
 .details {
@@ -23,7 +19,7 @@
 }
 
 .details p {
-	max-width: 36.0625rem;
+	@apply max-w-[36.0625rem];
 }
 
 .tags {
@@ -31,17 +27,12 @@
 }
 
 .tags span {
-	display: inline-block;
-	line-height: 1.5rem;
-	padding: 0.5rem 0.75rem;
-	border-radius: 0.5rem;
-	font-size: 1rem;
-	font-weight: 600;
+	@apply inline py-2 px-3 rounded-lg;
+	@apply text-base font-semibold;
 }
 
 .cover {
-	@apply relative;
-	margin-bottom: 6.5rem;
+	@apply relative mb-[6.5rem];
 }
 
 .image {
@@ -49,18 +40,10 @@
 }
 
 .brand {
-	@apply absolute rounded-2xl shadow border-4 border-white;
-	background-color: #f7f7f7;
-	padding: 1.5rem;
-	left: 50%;
-	margin-left: -4.5rem;
-	margin-top: -4.5rem;
-	width: 9rem;
-	height: 9rem;
+	@apply absolute rounded-2xl shadow border-4 border-white bg-[#f7f7f7] p-6 left-1/2 ml-[-4.5rem] mt-[-4.5rem] w-36 h-36;
 }
 
 .favoriteButton {
-	@apply absolute top-8 right-8;
-	@apply bg-white h-12 w-12 rounded-2xl flex items-center justify-center;
-	@apply transition-all hover:shadow-lg hover:bg-gray-300;
+	@apply flex items-center justify-center absolute top-8 right-8 bg-white h-12 w-12 rounded-2xl transition-all;
+	@apply hover:shadow-lg hover:bg-gray-300;
 }

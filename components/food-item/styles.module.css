@@ -3,24 +3,17 @@
 }
 
 .header {
-	display: flex;
+	@apply flex;
 }
 
 .header h3 {
-	font-size: 1rem;
-	line-height: 1.5rem;
-	font-weight: 700;
-	flex: 1;
+	@apply flex-1;
+	@apply text-base font-bold;
 }
 
 .header span {
-	font-size: 0.6875rem;
-	line-height: 1rem;
-	font-weight: 600;
-	color: #503e9d;
-	background-color: #edecf5;
-	padding: 0.25rem 0.5rem;
-	border-radius: 0.25rem;
+	@apply bg-[#edecf5] py-1 px-2 rounded-t;
+	@apply text-[0.6875rem] font-semibold leading-4 text-[#503e9d];
 }
 
 .item {

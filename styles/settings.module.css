@@ -1,9 +1,11 @@
 .container h1 {
-	@apply text-2xl font-bold mb-8;
+	@apply mb-8;
+	@apply text-2xl font-bold;
 }
 
 .container h2 {
-	@apply text-[#626264] mb-8;
+	@apply mb-8;
+	@apply text-[#626264];
 }
 
 .container ul {
@@ -11,8 +13,9 @@
 }
 
 .container li {
-	@apply text-base border-b border-[#f0f0f0];
-	@apply hover:border-b-slate-400 transition-colors;
+	@apply border-b border-[#f0f0f0] transition-colors;
+	@apply text-base;
+	@apply hover:border-b-slate-400;
 }
 
 .container li a {

@@ -1,48 +1,32 @@
 .sidebar {
-	max-height: 1024px;
-	background-color: #f7f7f7;
-	max-width: 112px;
-	@apply w-full flex flex-col rounded-3xl;
+	@apply flex flex-col w-full rounded-3xl max-h-[64rem] max-w-[7rem] bg-[#f7f7f7];
 }
 
 @media screen(lg) {
 	.sidebar {
-		width: 100%;
-		max-width: 304px;
+		@apply w-full max-w-[19rem];
 	}
 }
 
 .header {
-	padding-top: 32px;
-	padding-bottom: 48.02px;
-	padding-left: 32px;
-	padding-right: 32px;
-	display: flex;
-	align-items: center;
+	@apply flex items-center pt-8 pb-[3.00125rem] px-8;
 }
 
 .header h3 {
-	padding-left: 8px;
-	font-size: 1.125rem;
-	line-height: 1.5rem;
-	font-weight: 700;
-	color: #000000;
-	@apply hidden lg:block;
+	@apply hidden lg:block pl-2;
+	@apply text-lg leading-6 font-bold text-[#000000];
 }
 
 .menu {
-	flex-grow: 1;
-	padding: 0 28px;
+	@apply grow py-0 px-7;
 }
 
 .menu li {
-	height: 3.5rem;
-	border-radius: 0.75rem;
+	@apply h-14 rounded-xl;
 }
 
 .menu a {
-	display: flex;
-	padding: 1rem;
+	@apply flex p-4;
 	@apply font-bold text-base;
 }
 
@@ -55,18 +39,18 @@
 }
 
 .menu li:hover {
-	background-color: #503e9d;
+	@apply bg-[#503e9d];
 }
 
 .active {
-	background-color: #503e9d;
+	@apply bg-[#503e9d];
 }
 
 .active a,
 .menu li:hover a {
-	color: #f7fafc;
+	@apply text-[#f7fafc];
 }
 
 .footer {
-	padding: 2rem;
+	@apply p-8;
 }

@@ -1,16 +1,14 @@
 .navbar {
-	display: flex;
-	margin-bottom: 3rem;
-	justify-content: space-between;
+	@apply flex mb-12 justify-between;
 }
 
 .navbar .nav,
 .navbar .navButtons {
-	gap: 1.75rem;
+	@apply gap-7;
 }
 
 .navbar ul:last-child {
-	gap: 1rem;
+	@apply gap-4;
 }
 
 .navbar .nav {
@@ -22,37 +20,30 @@
 }
 
 .navbar li {
-	display: flex;
-	align-items: center;
+	@apply flex items-center;
 }
 
 .nav a {
-	display: flex;
-	align-items: center;
+	@apply flex items-center;
 }
 
 .nav svg:first-child {
-	margin-right: 0.75rem;
+	@apply mr-3;
 }
 
 .nav svg:last-child {
-	margin-left: 0.6875rem;
+	@apply ml-[0.6875rem];
 }
 
 .filterButton,
 .shoppingCartButton {
-	width: 3rem;
-	height: 3rem;
-	border-radius: 0.625rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@apply flex items-center justify-center rounded-[0.625rem] h-12 w-12;
 }
 
 .filterButton {
-	background-color: #503e9d;
+	@apply bg-[#503e9d];
 }
 
 .shoppingCartButton {
-	background-color: #fb6d3a;
+	@apply bg-[#fb6d3a];
 }

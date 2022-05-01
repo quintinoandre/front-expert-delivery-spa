@@ -1,21 +1,17 @@
 .information {
-	display: flex;
-	font-weight: 400;
-	font-size: 0.75rem;
-	color: #626264;
-	margin-left: 0.9375rem;
+	@apply flex ml-[0.9375rem];
+	@apply font-normal text-xs text-[#626264];
 }
 
 .information svg {
-	margin-right: 0.5rem;
+	@apply mr-2;
 }
 
 .information:first-child {
-	margin-left: 0rem;
+	@apply ml-0;
 }
 
 .information span {
-	font-weight: 600;
-	margin-right: 0.3125rem;
-	color: #182135;
+	@apply mr-[0.3125rem];
+	@apply font-semibold text-[#182135];
 }
