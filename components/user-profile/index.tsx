@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { IconOptions } from '../icon-family';
+import { IconBase as Icon } from '../icon';
 import Styles from './styles.module.css';
 
 function UserProfile() {
@@ -14,7 +14,7 @@ function UserProfile() {
 				<p>markclarke@gmail.com</p>
 			</div>
 			<div className={Styles.button}>
-				<IconOptions color="black" />
+				<Icon iconName="options" color="black" />
 			</div>
 		</div>
 	);

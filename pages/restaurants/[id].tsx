@@ -4,7 +4,7 @@ import {
 	FoodsList,
 	PageTemplate,
 	DetailsItem,
-	IconBase,
+	IconBase as Icon,
 } from '../../components';
 import Styles from './styles.module.css';
 
@@ -37,7 +37,7 @@ function Restaurant({ ...props }: TypeProps) {
 						/>
 					</div>
 					<button className={Styles.favoriteButton}>
-						<IconBase iconName="heart" size={20} color="#000000" />
+						<Icon iconName="heart" size={20} color="#000000" />
 					</button>
 				</div>
 				<div className={Styles.details}>

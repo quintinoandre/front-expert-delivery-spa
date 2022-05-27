@@ -2,7 +2,7 @@ import { Fragment, useState, useEffect } from 'react';
 
 import { Menu, Transition } from '@headlessui/react';
 
-import { IconLocation, IconOptions } from '../icon-family';
+import { IconBase as Icon } from '../icon';
 
 function LocationsFilter() {
 	const [locationSelected, setLocationSelected] = useState('');
@@ -35,10 +35,10 @@ function LocationsFilter() {
 		<Menu as="div" className="relative inline-block text-left">
 			<div>
 				<Menu.Button className="flex justify-center items-center w-full">
-					<IconLocation size={24} color="#503E9D" />
+					<Icon iconName="location" size={24} color="#503E9D" />
 					{locationSelected}
 					<div className="flex">
-						<IconOptions size={16} color="#000000" />
+						<Icon iconName="options" size={16} color="#000000" />
 					</div>
 				</Menu.Button>
 			</div>

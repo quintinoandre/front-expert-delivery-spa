@@ -1,17 +1,12 @@
-import {
-	IconStar,
-	IconMoney,
-	IconSilverware,
-	IconLocation,
-	IconDelivery,
-} from '../icon-family';
+import { IconBase as Icon } from '../icon';
+import { IconDelivery } from '../icon-family';
 import Styles from './styles.module.css';
 import { TypeProps } from './types';
 
 function RateComponent(rate: number, reviews: number) {
 	return (
 		<div className={Styles.information}>
-			<IconStar size={16} color="#FACD5D" />
+			<Icon iconName="star" size={16} color="#FACD5D" />
 			<span className="font-bold">{rate}</span>({reviews})
 		</div>
 	);
@@ -20,7 +15,7 @@ function RateComponent(rate: number, reviews: number) {
 function CategoryComponent(category: string) {
 	return (
 		<div className={Styles.information}>
-			<IconSilverware size={16} color="#A3A3A4" />
+			<Icon iconName="silverware" size={16} color="#A3A3A4" />
 			{category}
 		</div>
 	);
@@ -29,7 +24,7 @@ function CategoryComponent(category: string) {
 function PriceComponent(price: number) {
 	return (
 		<div className={Styles.information}>
-			<IconMoney size={16} color="#A3A3A4" />
+			<Icon iconName="money" size={16} color="#A3A3A4" />
 			{price}
 		</div>
 	);
@@ -42,7 +37,7 @@ function BonusComponent(bonus: string) {
 function DistanceComponent(distance: string) {
 	return (
 		<div className={Styles.information}>
-			<IconLocation size={16} color="#A3A3A4" />
+			<Icon iconName="location" size={16} color="#A3A3A4" />
 			{distance}
 		</div>
 	);

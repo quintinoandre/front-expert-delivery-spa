@@ -2,7 +2,7 @@ import { Fragment, useState, useEffect } from 'react';
 
 import { Menu, Transition } from '@headlessui/react';
 
-import { IconCoupon, IconOptions } from '../icon-family';
+import { IconBase as Icon } from '../icon';
 
 function BestDealsFilter() {
 	const [bestDealsModeSelected, setBestDealsModeSelected] = useState('');
@@ -32,10 +32,10 @@ function BestDealsFilter() {
 		<Menu as="div" className="relative inline-block text-left">
 			<div>
 				<Menu.Button className="flex justify-center items-center w-full">
-					<IconCoupon color="#FACD5D" />
+					<Icon iconName="coupon" color="#FACD5D" />
 					{bestDealsModeSelected}
 					<div className="flex">
-						<IconOptions size={16} color="#000000" />
+						<Icon iconName="options" size={16} color="#000000" />
 					</div>
 				</Menu.Button>
 			</div>

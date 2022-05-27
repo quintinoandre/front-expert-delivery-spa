@@ -25,7 +25,8 @@
 		"eslint-plugin-import-helpers",
 		"react",
 		"@typescript-eslint",
-		"prettier"
+		"prettier",
+		"unused-imports"
 	],
 	"rules": {
 		"prettier/prettier": "error",
@@ -44,10 +45,23 @@
 		"react/require-default-props": "off",
 		"react/react-in-jsx-scope": "off",
 		"react/jsx-no-useless-fragment": "off",
+		"react/jsx-no-bind": "off",
+		"react/jsx-uses-react": 1,
+		"react/jsx-uses-vars": 1,
 		"@typescript-eslint/no-unused-vars": [
 			"warn",
 			{
 				"argsIgnorePattern": "_"
+			}
+		],
+		"unused-imports/no-unused-imports": "error",
+		"unused-imports/no-unused-vars": [
+			"warn",
+			{
+				"vars": "all",
+				"varsIgnorePattern": "^_",
+				"args": "after-used",
+				"argsIgnorePattern": "^_"
 			}
 		],
 		"import-helpers/order-imports": [

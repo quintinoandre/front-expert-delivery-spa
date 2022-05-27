@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { Category } from '../category';
-import { IconChevronRight } from '../icon-family';
+import { IconBase as Icon } from '../icon';
 import Styles from './styles.module.css';
 
 function Categories() {
@@ -56,7 +56,7 @@ function Categories() {
 				<Link href="/categories">
 					<a>
 						See all
-						<IconChevronRight size={12} color="#5B4AA3" />
+						<Icon iconName="chevron-right" size={12} color="#5B4AA3" />
 					</a>
 				</Link>
 			</div>

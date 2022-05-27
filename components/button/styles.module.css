@@ -1,5 +1,16 @@
-.button {
+.primary,
+.secondary {
 	@apply w-full h-16 rounded-xl;
-	@apply text-xl leading-8;
+	@apply text-xl leading-8 font-bold;
 	@apply hover:opacity-80;
+}
+
+.primary {
+	@apply bg-[#503E9D];
+	@apply text-white;
+}
+
+.secondary {
+	@apply bg-[#FACD5D];
+	@apply text-black;
 }

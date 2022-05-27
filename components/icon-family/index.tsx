@@ -1,6 +1,7 @@
 export * from './icon-bookmark';
 export * from './icon-card';
 export * from './icon-chevron-right';
+export * from './icon-close';
 export * from './icon-coupon';
 export * from './icon-delivery';
 export * from './icon-document';

@@ -1,10 +1,10 @@
-import { IconSearch } from '../icon-family';
+import { IconBase as Icon } from '../icon';
 import Styles from './styles.module.css';
 
 function SearchInput() {
 	return (
 		<div className={Styles.inputSearch}>
-			<IconSearch color="#000000" />
+			<Icon iconName="search" color="#000000" />
 			<input placeholder="Search for anything" />
 		</div>
 	);

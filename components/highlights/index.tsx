@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { HighlightsItem } from '../highlights-item';
-import { IconChevronRight } from '../icon-family';
+import { IconBase as Icon } from '../icon';
 import Styles from './styles.module.css';
 import { TypeProps } from './types';
 
@@ -82,7 +82,7 @@ function Highlights({ ...props }: TypeProps) {
 				<Link href="/highlights">
 					<a>
 						See all
-						<IconChevronRight size={12} color="#5B4AA3" />
+						<Icon iconName="chevron-right" size={12} color="#5B4AA3" />
 					</a>
 				</Link>
 			</div>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { IconBase } from '../icon';
+import { IconBase as Icon } from '../icon';
 import { UserProfile } from '../user-profile';
 import Styles from './styles.module.css';
 
@@ -18,7 +18,7 @@ function Sidebar() {
 				<li className={Styles.active}>
 					<Link href="/">
 						<a>
-							<IconBase iconName="home" color="#A3A3A4" />
+							<Icon iconName="home" color="#A3A3A4" />
 							<span>Home</span>
 						</a>
 					</Link>
@@ -26,7 +26,7 @@ function Sidebar() {
 				<li>
 					<Link href="/explore">
 						<a>
-							<IconBase iconName="feed" color="#A3A3A4" />
+							<Icon iconName="feed" color="#A3A3A4" />
 							<span>Explore</span>
 						</a>
 					</Link>
@@ -34,7 +34,7 @@ function Sidebar() {
 				<li>
 					<Link href="/favorites">
 						<a>
-							<IconBase iconName="bookmark" color="#A3A3A4" />
+							<Icon iconName="bookmark" color="#A3A3A4" />
 							<span>Favorites</span>
 						</a>
 					</Link>
@@ -42,7 +42,7 @@ function Sidebar() {
 				<li>
 					<Link href="/orders">
 						<a>
-							<IconBase iconName="document" color="#A3A3A4" />
+							<Icon iconName="document" color="#A3A3A4" />
 							<span>Orders</span>
 						</a>
 					</Link>
@@ -50,7 +50,7 @@ function Sidebar() {
 				<li>
 					<Link href="/messages">
 						<a>
-							<IconBase iconName="mail" color="#A3A3A4" />
+							<Icon iconName="mail" color="#A3A3A4" />
 							<span>Messages</span>
 						</a>
 					</Link>
@@ -58,7 +58,7 @@ function Sidebar() {
 				<li>
 					<Link href="/settings">
 						<a>
-							<IconBase iconName="settings" color="#A3A3A4" />
+							<Icon iconName="settings" color="#A3A3A4" />
 							<span>Settings</span>
 						</a>
 					</Link>

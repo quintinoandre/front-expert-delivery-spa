@@ -1,5 +1,5 @@
 import { useFilter } from '../../stores';
-import { IconShoppingCart, IconFilter } from '../icon-family';
+import { IconBase as Icon } from '../icon';
 import { SearchInput } from '../search-input';
 import { BestDealsFilter } from './best-deals-filter-dropdown';
 import { LocationsFilter } from './locations-filter-dropdown';
@@ -29,12 +29,12 @@ function Navbar() {
 						className={Styles.filterButton}
 						onClick={(_event) => toggleModal()}
 					>
-						<IconFilter color="#FFFFFF" />
+						<Icon iconName="filter" color="#FFFFFF" />
 					</button>
 				</li>
 				<li>
 					<button className={Styles.shoppingCartButton}>
-						<IconShoppingCart color="#FFFFFF" />
+						<Icon iconName="shopping-cart" color="#FFFFFF" />
 					</button>
 				</li>
 			</ul>

@@ -2,7 +2,7 @@ import { Fragment, useState, useEffect } from 'react';
 
 import { Menu, Transition } from '@headlessui/react';
 
-import { IconOptions, IconShoppingBag } from '../icon-family';
+import { IconBase as Icon } from '../icon';
 
 function PickUpFilter() {
 	const [pickUpModeSelected, setPickUpModeSelected] = useState('');
@@ -32,10 +32,10 @@ function PickUpFilter() {
 		<Menu as="div" className="relative inline-block text-left">
 			<div>
 				<Menu.Button className="flex justify-center items-center w-full">
-					<IconShoppingBag color="#FB6D3A" />
+					<Icon iconName="shopping-bag" color="#FB6D3A" />
 					{pickUpModeSelected}
 					<div className="flex">
-						<IconOptions size={16} color="#000000" />
+						<Icon iconName="options" size={16} color="#000000" />
 					</div>
 				</Menu.Button>
 			</div>

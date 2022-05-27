@@ -12,5 +12,6 @@ export * from './navbar';
 export * from './page-head';
 export * from './page-template';
 export * from './search-input';
+export * from './settings';
 export * from './sidebar';
 export * from './user-profile';
