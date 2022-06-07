@@ -26,7 +26,7 @@ function SavedAddresses() {
 					<Icon iconName="bookmark" color="#FB6D3A" />
 					Saved addresses
 				</div>
-				<Icon iconName="chevron-right" color="#A3A3A4" size={16} />
+				<Icon iconName="chevron-right" color="#A3A3A4" />
 			</button>
 			<Dialog
 				open={isOpen}

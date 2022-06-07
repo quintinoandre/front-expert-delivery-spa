@@ -38,7 +38,7 @@ function Categories() {
 			id: '5',
 			name: 'Pick up',
 			legend: '3,348+ options',
-			iconName: 'home',
+			iconName: 'restaurant',
 			backgroundSection: '#503E9D',
 		},
 		{

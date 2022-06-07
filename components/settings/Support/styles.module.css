@@ -1,0 +1,56 @@
+.dialog {
+	@apply relative z-50;
+}
+
+.dialog__div {
+	@apply fixed inset-0 flex bg-black/25 items-center justify-center p-4;
+}
+
+.dialogPanel {
+	@apply w-[25rem] p-8 rounded-2xl bg-white;
+}
+
+.dialogPanel ul {
+	@apply grid gap-6;
+}
+
+.dialogPanel li > div,
+.dialogPanel li > button {
+	@apply flex gap-4 items-center w-full;
+	@apply transition-opacity;
+}
+
+.dialogPanel li > div div:first-child,
+.dialogPanel li > button div:first-child {
+	@apply flex min-w-[3rem] min-h-[3rem] items-center justify-center;
+	@apply rounded-[0.625rem];
+}
+
+.dialogPanel li > div div:nth-child(2),
+.dialogPanel li > button div:nth-child(2) {
+	@apply flex-1 text-left;
+}
+
+.dialogPanel li button:hover {
+	@apply opacity-70;
+}
+
+.dialogPanel li h3 {
+	@apply text-[0.6875rem] leading-4 tracking-[0.0625rem] uppercase;
+}
+
+.dialogTitle {
+	@apply mb-8 flex justify-between items-center;
+}
+
+.purple {
+	@apply bg-[rgba(80,62,157,0.1)];
+}
+
+.orange {
+	@apply bg-[rgba(251,109,58,0.1)];
+}
+
+.yellow {
+	@apply bg-[rgba(250,205,93,0.1)];
+}

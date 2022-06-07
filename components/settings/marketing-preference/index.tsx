@@ -26,7 +26,7 @@ function MarketingPreference() {
 					<Icon iconName="mail" color="#FACD5D" />
 					Marketing preference
 				</div>
-				<Icon iconName="chevron-right" color="#A3A3A4" size={16} />
+				<Icon iconName="chevron-right" color="#A3A3A4" />
 			</button>
 			<Dialog
 				open={isOpen}

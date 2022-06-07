@@ -14,7 +14,7 @@ function UserProfile() {
 				<p>markclarke@gmail.com</p>
 			</div>
 			<div className={Styles.button}>
-				<Icon iconName="options" color="black" />
+				<Icon iconName="options" color="#000000" />
 			</div>
 		</div>
 	);

@@ -2,10 +2,14 @@ import type { NextPage } from 'next';
 
 import {
 	PageTemplate,
-	IconBase as Icon,
 	PersonalInformation,
 	SavedAddresses,
 	MarketingPreference,
+	PaymentMethods,
+	MyCards,
+	Support,
+	InviteAFriend,
+	Discounts,
 } from '../components';
 import Styles from '../styles/settings.module.css';
 
@@ -32,52 +36,22 @@ const Settings: NextPage = () => {
 				<p>Payments</p>
 				<ul>
 					<li>
-						<button>
-							<div>
-								<Icon iconName="wallet" color="#503E9D" />
-								Payment methods
-							</div>
-							<Icon iconName="chevron-right" color="#A3A3A4" size={16} />
-						</button>
+						<PaymentMethods />
 					</li>
 					<li>
-						<button>
-							<div>
-								<Icon iconName="card" color="#FB6D3A" />
-								My cards
-							</div>
-							<Icon iconName="chevron-right" color="#A3A3A4" size={16} />
-						</button>
+						<MyCards />
 					</li>
 				</ul>
 				<p>Other</p>
 				<ul>
 					<li>
-						<button>
-							<div>
-								<Icon iconName="support" color="#503E9D" />
-								Support
-							</div>
-							<Icon iconName="chevron-right" color="#A3A3A4" size={16} />
-						</button>
+						<Support />
 					</li>
 					<li>
-						<button>
-							<div>
-								<Icon iconName="split-order" color="#FB6D3A" />
-								Invite a friend
-							</div>
-							<Icon iconName="chevron-right" color="#A3A3A4" size={16} />
-						</button>
+						<InviteAFriend />
 					</li>
 					<li>
-						<button>
-							<div>
-								<Icon iconName="money" color="#FACD5D" size={24} />
-								Discounts
-							</div>
-							<Icon iconName="chevron-right" color="#A3A3A4" size={16} />
-						</button>
+						<Discounts />
 					</li>
 				</ul>
 			</div>

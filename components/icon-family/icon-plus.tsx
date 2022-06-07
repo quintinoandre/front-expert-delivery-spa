@@ -1,16 +1,21 @@
 import { IconProps } from '../../types';
 
-function IconFilter({ ...props }: IconProps) {
+function IconPlus({ ...props }: IconProps) {
 	function svgPathToReturn(size: string | number | undefined) {
 		if (typeof size === 'string') Number(size);
 
 		switch (size) {
+			case 32:
+				return (
+					<path
+						d="M32 18.2857H18.2857V32H13.7143V18.2857H0V13.7143H13.7143V0H18.2857V13.7143H32V18.2857Z"
+						fill={props.color || 'gray'}
+					/>
+				);
 			default:
 				return (
 					<path
-						fillRule="evenodd"
-						clipRule="evenodd"
-						d="M0 3V5.33333H20V3H0ZM3.33333 11.1667H16.6667V8.83333H3.33333V11.1667ZM12.2222 17H7.77778V14.6667H12.2222V17Z"
+						d="M20 11.4286H11.4286V20H8.57143V11.4286H0V8.57143H8.57143V0H11.4286V8.57143H20V11.4286Z"
 						fill={props.color || 'gray'}
 					/>
 				);
@@ -30,4 +35,4 @@ function IconFilter({ ...props }: IconProps) {
 	);
 }
 
-export { IconFilter };
+export { IconPlus };

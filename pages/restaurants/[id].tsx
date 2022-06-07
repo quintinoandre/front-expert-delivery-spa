@@ -37,7 +37,7 @@ function Restaurant({ ...props }: TypeProps) {
 						/>
 					</div>
 					<button className={Styles.favoriteButton}>
-						<Icon iconName="heart" size={20} color="#000000" />
+						<Icon iconName="heart" color="#000000" />
 					</button>
 				</div>
 				<div className={Styles.details}>

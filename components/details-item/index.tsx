@@ -1,12 +1,11 @@
 import { IconBase as Icon } from '../icon';
-import { IconDelivery } from '../icon-family';
 import Styles from './styles.module.css';
 import { TypeProps } from './types';
 
 function RateComponent(rate: number, reviews: number) {
 	return (
 		<div className={Styles.information}>
-			<Icon iconName="star" size={16} color="#FACD5D" />
+			<Icon iconName="star" color="#FACD5D" />
 			<span className="font-bold">{rate}</span>({reviews})
 		</div>
 	);
@@ -15,7 +14,7 @@ function RateComponent(rate: number, reviews: number) {
 function CategoryComponent(category: string) {
 	return (
 		<div className={Styles.information}>
-			<Icon iconName="silverware" size={16} color="#A3A3A4" />
+			<Icon iconName="silverware" color="#A3A3A4" />
 			{category}
 		</div>
 	);
@@ -24,7 +23,7 @@ function CategoryComponent(category: string) {
 function PriceComponent(price: number) {
 	return (
 		<div className={Styles.information}>
-			<Icon iconName="money" size={16} color="#A3A3A4" />
+			<Icon iconName="money" color="#A3A3A4" />
 			{price}
 		</div>
 	);
@@ -37,7 +36,7 @@ function BonusComponent(bonus: string) {
 function DistanceComponent(distance: string) {
 	return (
 		<div className={Styles.information}>
-			<Icon iconName="location" size={16} color="#A3A3A4" />
+			<Icon iconName="location" color="#A3A3A4" />
 			{distance}
 		</div>
 	);
@@ -46,7 +45,7 @@ function DistanceComponent(distance: string) {
 function DeliveryTime(deliveryTime: string) {
 	return (
 		<div className={Styles.information}>
-			<IconDelivery size={16} color="#A3A3A4" />
+			<Icon iconName="delivery" size={16} color="#A3A3A4" />
 			{deliveryTime}
 		</div>
 	);

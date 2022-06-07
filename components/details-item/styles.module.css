@@ -1,6 +1,6 @@
 .information {
 	@apply flex ml-[0.9375rem];
-	@apply font-normal text-xs text-[#626264];
+	@apply font-normal text-[1rem] text-[#626264];
 }
 
 .information svg {

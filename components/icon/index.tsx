@@ -16,6 +16,8 @@ import {
 	IconMap,
 	IconMoney,
 	IconOptions,
+	IconPhone,
+	IconPlus,
 	IconProfile,
 	IconRestaurant,
 	IconSearch,
@@ -66,6 +68,10 @@ function IconBase({ ...props }: TypeProps): JSX.Element {
 			return <IconMoney size={props.size} color={props.color} />;
 		case 'options':
 			return <IconOptions size={props.size} color={props.color} />;
+		case 'phone':
+			return <IconPhone size={props.size} color={props.color} />;
+		case 'plus':
+			return <IconPlus size={props.size} color={props.color} />;
 		case 'profile':
 			return <IconProfile size={props.size} color={props.color} />;
 		case 'restaurant':

@@ -5,7 +5,7 @@ import { Dialog } from '@headlessui/react';
 import { Button } from '../../button';
 import { IconBase as Icon } from '../../icon';
 
-function PersonalInformation() {
+function PaymentMethods() {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -23,8 +23,8 @@ function PersonalInformation() {
 		<>
 			<button onClick={() => setIsOpen(true)}>
 				<div>
-					<Icon iconName="profile" color="#503E9D" />
-					Personal information
+					<Icon iconName="wallet" color="#503E9D" />
+					Payment methods
 				</div>
 				<Icon iconName="chevron-right" color="#A3A3A4" />
 			</button>
@@ -39,20 +39,19 @@ function PersonalInformation() {
 							as="h2"
 							className="mb-8 flex justify-between items-center"
 						>
-							<div>Personal information</div>
+							<div>Payment methods</div>
 							<button onClick={() => setIsOpen(false)}>
 								<Icon iconName="close" color="#A3A3A4" />
 							</button>
 						</Dialog.Title>
-						<p>Profile image</p>
-						<p>Profile details</p>
+						<p>[3 buttons]</p>
 						<Button
 							variant="primary"
 							loadingMessage="Sending"
 							isLoading={isLoading}
 							onClick={handleSend}
 						>
-							Update profile
+							Update preferences
 						</Button>
 					</Dialog.Panel>
 				</div>
@@ -61,4 +60,4 @@ function PersonalInformation() {
 	);
 }
 
-export { PersonalInformation };
+export { PaymentMethods };

@@ -35,7 +35,7 @@ function LocationsFilter() {
 		<Menu as="div" className="relative inline-block text-left">
 			<div>
 				<Menu.Button className="flex justify-center items-center w-full">
-					<Icon iconName="location" size={24} color="#503E9D" />
+					<Icon iconName="location" color="#503E9D" />
 					{locationSelected}
 					<div className="flex">
 						<Icon iconName="options" size={16} color="#000000" />

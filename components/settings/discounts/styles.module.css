@@ -1,0 +1,36 @@
+.dialog {
+	@apply relative z-50;
+}
+
+.dialog__div {
+	@apply fixed inset-0 flex bg-black/25 items-center justify-center p-4;
+}
+
+.dialogPanel {
+	@apply w-[25rem] p-8 rounded-2xl bg-white;
+}
+
+.dialogTitle {
+	@apply mb-8 flex justify-between items-center;
+}
+
+.discounts {
+	@apply grid gap-6;
+}
+
+.discounts div {
+	@apply flex flex-col items-center justify-center;
+	@apply bg-[#f7f7f7] border-[#A3A3A4] border border-dashed  rounded-[0.625rem] min-h-[7.25rem];
+}
+
+.discounts p {
+	@apply text-[0.6875rem];
+}
+
+.discounts li.purple h3 {
+	@apply text-[#503E9D];
+}
+
+.discounts li.orange h3 {
+	@apply text-[#FB6D3A];
+}

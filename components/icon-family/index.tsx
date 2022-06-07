@@ -15,6 +15,8 @@ export * from './icon-mail';
 export * from './icon-map';
 export * from './icon-money';
 export * from './icon-options';
+export * from './icon-phone';
+export * from './icon-plus';
 export * from './icon-profile';
 export * from './icon-restaurant';
 export * from './icon-search';

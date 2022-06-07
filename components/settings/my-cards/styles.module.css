@@ -1,0 +1,66 @@
+.dialog {
+	@apply relative z-50;
+}
+
+.dialog__div {
+	@apply fixed inset-0 flex bg-black/25 items-center justify-center p-4;
+}
+
+.dialogPanel {
+	@apply w-[25rem] p-8 rounded-2xl bg-white;
+}
+
+.dialogPanel ul {
+	@apply grid grid-cols-2 gap-4;
+}
+
+.dialogTitle {
+	@apply mb-8 flex justify-between items-center;
+}
+
+.button {
+	@apply flex items-center justify-center rounded-xl;
+	@apply min-h-[14rem] min-w-[10rem];
+	@apply bg-[#F7F7F7] transition-opacity;
+}
+
+.button:hover {
+	@apply opacity-90;
+}
+
+.cardButton {
+	@apply bg-[#2D2D2D] p-4 text-left items-start;
+}
+
+.cardButton h3 {
+	@apply text-base text-[#F7FAFC] mb-1;
+}
+
+.cardButton p {
+	@apply text-xs leading-[1.125rem] text-[#A3A3A4];
+}
+
+.cardButton > div {
+	@apply flex flex-col w-full justify-start;
+}
+
+.cardButton > div div:first-child {
+	@apply flex w-full justify-between items-center;
+}
+
+.cardButton > div div:first-child p {
+	@apply text-xs leading-[1.125rem] text-[#F7FAFC];
+}
+
+.cardButton > div div:first-child p:before {
+	content: '....';
+	@apply text-[2.25rem] text-[#F7FAFC] leading-4 mr-1;
+}
+
+.cardButton div div:nth-child(2) {
+	@apply flex flex-col shrink mt-[5.125rem];
+}
+
+.cardButton > div div:last-child {
+	@apply flex w-full justify-end;
+}
